@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body{
-    width: 100vw;
-    height: 100wh;
+    width: 100%;
+    height: 100%;
+    
 }
 .codoacodo__img{
     
@@ -21,11 +23,12 @@ body{
     
 }
 .ancho__carrusel{
-    max-width: 100vw;
+    max-width: 100%;
 }
 
 .img__carrusel{
-    width: 100vw ;
+    filter: brightness(30%);
+    width: 100% ;
     height: 555px ;
 }
 .texto__carousel{
@@ -44,6 +47,7 @@ body{
     color: white;
     border: groove;
     border-radius: 10%;
+    width: 150px;
     height: 40px;
     align-content: flex-end;
 }
@@ -52,6 +56,7 @@ body{
     color: white;
     border: none;
     border-radius: 10%;
+    width: 150px;
     height: 40px;
 }
 .div__input{
@@ -64,7 +69,7 @@ body{
     text-align: center;
 }
 .section__cards{
-   width: 800px;
+   width: 800px!important;
     margin-left: 20%;
     margin-right: 10%;
     
@@ -77,26 +82,37 @@ body{
 .img__margin{
    margin: 10px;
 }
+/* pantalla-dividida */
 .input__pantalla{
     display: flex;
     background-color: rgba(0, 0, 0, 0);
     color: white;
     border: groove;
-    margin-top: 20px ;
+    margin-top: 30px ;
 
 }
-.img__col{
-    
+.pantalla__dividida{
+    width: 100%;
+    display: flex;
+}
+.imagen__pantalla{
+
+    width: 50%;
     background-image: url("imagen/honolulu.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 70vh;
 }
-.pantalla__dividida{ 
+.pantalla__dividida__texto{ 
     width: 50vw;
     text-align: start;
+    height: 70vh;
+    padding-left: 10px;
+    padding-top: 10px;
 }
+ /* pantalla dividida */
+
 .text__area{
     padding-top: 20px;
     
@@ -128,6 +144,14 @@ footer{
         padding-left: 0;
         padding-right: 0;
     }
+    .section__cards {
+    width: 600px;
+    margin-left: 10%;
+    margin-right: 20%;
+
+
+
+} 
 }
 @media (max-width:760px){
         .menu_footer {
@@ -140,15 +164,44 @@ footer{
         margin-left: 10px;}
 }
 @media (max-width:760px){
-    .texto__carousel {
+ .texto__carousel {
         
         top: 20%;
         text-align: right;
         font-size: 0,8rem;
         color: white;
         z-index: 5;}
+.section__cards{
+    width: 600px;
+    margin-left: 10%;
+    margin-right: 20%; 
+}         
+.input__pantalla{
+    flex-direction: column;
+    color: white;
+    border: groove;
+    margin-top: 30px ;
+    width: 110px;
+    text-align: center;
 }
-
+.pantalla__dividida{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.pantalla__dividida__texto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.imagen__pantalla{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}  
+}
 @media (max-width:580px) {
     .texto__carousel {
         
@@ -158,21 +211,44 @@ footer{
         color: white;
         z-index: 3;
     }
+.input__pantalla{
+    flex-direction: column;
+    color: white;
+    border: groove;
+    margin-top: 30px ;
+    width: 110px;
+    text-align: center;
+}
 
-.img__col{
-    width: 100vw;
+
+.pantalla__dividida{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-.pantalla__dividida {
-    width: 100vw;
-    text-align: start;
-    height: 400px;
+.pantalla__dividida__texto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
 }
+.imagen__pantalla{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}  
 .section__cards {
-    width: 400px;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 400px!important; 
+    justify-content: center;
 
 
 
 }
+
+
 }
+
+
+
+
